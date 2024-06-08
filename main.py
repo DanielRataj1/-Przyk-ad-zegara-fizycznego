@@ -54,8 +54,8 @@ if __name__ == "__main__":
         t = threading.Thread(target=run_process, args=(process, stop_event))
         t.start()
         threads.append(t)
-
-    # Symulowanie komunikacji między procesami
+        
+    # Symulowaie komunikacji między procesami
     communication_thread = threading.Thread(target=simulate_communication, args=(processes, stop_event))
     communication_thread.start()
 
